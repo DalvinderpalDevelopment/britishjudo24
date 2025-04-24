@@ -1,0 +1,293 @@
+@use "../1-utilities/" as *;
+
+.header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+	&__eyebrow {
+		height: 40px;
+		background-color: $blue-navy;
+
+		&--sponsor {
+			display: flex;
+			font-size: 14px;
+			text-transform: capitalize;
+			white-space: nowrap;
+
+			img {
+				margin-left: 12px;
+			}
+		}
+
+		&--stream-live {
+			display: flex;
+			font-size: 14px;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+			margin-left: 40px;
+
+			span {
+				display: block;
+				width: 9px;
+				height: 9px;
+				margin-left: 4px;
+				background-color: $red-base;
+				border-radius: 50%;
+			}
+		}
+
+		&--nav {
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+
+			ul {
+				display: flex;
+				align-items: flex-end;
+				list-style: none;
+				gap: 0 30px;
+
+				li {
+
+					a {
+						font-size: 14px;
+						text-transform: uppercase;
+						text-decoration: none;
+					}
+
+					&:last-of-type {
+
+						a {
+							display: flex;
+							align-items: center;
+
+							&::after {
+								content: "";
+								display: block;
+								width: 12px;
+								height: 12px;
+								margin-left: 8px;
+								background: url('../img/icons/shop-bag-icon.svg');
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__main {
+		position: relative;
+
+		.container {
+			height: 100px;
+		}
+
+		&--logo {
+			width: 160px;
+			height: 55px;
+			margin-right: auto;
+			background: url('../img/branding/british-judo-logo-white.svg');
+			}
+
+			&--nav {
+				height: 100%;
+				margin-right: 30px;
+
+				ul {
+					display: flex;
+					align-items: center;
+					height: 100%;
+					list-style: none;
+					margin: 0 -17px;
+
+					li {
+						display: flex;
+						align-items: center;
+						height: 100%;
+
+						a {
+							font-size: 16px;
+							text-transform: uppercase;
+							text-decoration: none;
+							padding: 0 18px;
+						}
+
+						&:hover {
+
+							> .header__main--nav-dropdown {
+								visibility: visible;
+								opacity: 1;
+								transition: all 0.6s ease;
+							}
+						}
+					}
+				}
+
+			&-dropdown {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100%;
+				padding: 55px 0;
+				visibility: hidden;
+				opacity: 0;
+				background-color: $white-base;
+
+				.container {
+					height: unset;
+
+					h2 {
+						display: flex;
+						align-items: flex-end;
+						width: 260px;
+						margin-top: 10px;
+						font-size: 50px;
+						color: $blue-navy;
+
+						span {
+							display: block;
+							width: 9px;
+							height: 9px;
+							margin-left: 4px;
+							margin-bottom: 4px;
+							background-color: $red-base;
+							border-radius: 50%;
+						}
+					}
+
+					ul {
+						display: flex;
+						flex-wrap: wrap;
+						width: 400px;
+
+						li {
+							flex: 0 0 50%;
+							padding: 5px 0;
+							height: unset;
+
+							a {
+								color: $blue-navy;
+							}
+
+							&:hover {
+
+								a {
+									color: $red-base !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&--search {
+			position: absolute;
+			height: 80px;
+			visibility: hidden;
+			opacity: 0;
+
+			&-toggle {
+				display: flex;
+				align-items: center;
+				width: 50px;
+				height: 50px;
+				margin-right: 18px;
+				background-color: $white-base;
+				border: 1px solid #e2e2e2;
+				border-radius: 50%;
+				background: #fff url('../img/icons/search-icon-blue.svg') no-repeat center center;
+			}
+		}
+
+		&--search.active {
+			position: unset;
+			width: 75.5%;
+			display: flex;
+			align-items: center;
+			margin-right: 24px;
+			visibility: visible;
+			opacity: 1;
+
+			form {
+				position: relative;
+				width: 100%;
+				display: flex;
+				align-items: center;
+
+				input {
+					width: 100%;
+					height: 55px;
+					padding: 0 20px;
+					border: 1px solid #e2e2e2;
+					border-radius: 50px;
+				}
+
+				button {
+					position: absolute;
+					top: 1px;
+					right: 1px;
+					width: 55px;
+					height: 55px;
+					background: $blue-navy url('../img/icons/search-icon-white.svg') no-repeat center center;
+					border-radius: 50px;
+				}
+			}
+
+			~ .header__main--search-toggle {
+				background: #fff url('../img/icons/nav-close-icon-blue.svg') no-repeat center center;
+			}
+		}
+
+		&--become-member {
+			display: flex;
+			align-items: center;
+			padding: 20px 22px;
+			border-radius: 50px;
+			background-color: $red-base;
+			color: $white-base;
+			font-size: 14px;
+			text-transform: uppercase;
+			text-decoration: none;
+			border: none;
+
+			&::after {
+				content: "";
+				display: block;
+				width: 16px;
+				height: 16px;
+				margin-left: 8px;
+				background: url('../img/icons/caret-right-icon-white.svg') no-repeat;
+			}
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.nav-toggle {
+		background-color: $white-base;
+
+		.header__main--logo {
+			background: url('../img/branding/british-judo-logo.svg') no-repeat !important;
+			background-size: contain;
+		}
+
+		.header__main--nav {
+			
+			ul {
+
+				li {
+					a {
+						color: $blue-navy;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+@use "../1-utilities/" as *;
+
+.benefits {
+	background-color: $blue-navy;
+	position: relative;
+	padding: 120px 0;
+
+	&__content {
+		position: relative;
+		z-index: 2;
+		width: 50%;
+
+		h2 {
+			margin-bottom: 30px;
+			color: $white-base;
+
+			span {
+				color: $red-base;
+			}
+		}
+
+		&__list {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 10px;
+			list-style: none;
+			padding: 20px 0;
+
+			li {
+				display: flex;
+				align-items: center;
+				margin-bottom: 18px;
+
+				span {
+					margin-right: 30px;
+				}
+			}
+		}
+
+		&__buttons {
+			display: flex;
+
+			&__become-member {
+				background-color: $red-base;
+				margin-right: 20px;
+			}
+
+			&__explore-benefits {
+				background-color: transparent;
+			}
+
+			&__become-member,
+			&__explore-benefits {
+				display: flex;
+				align-items: center;
+				color: $white-base;
+				font-size: 14px;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 20px 22px;
+				border-radius: 50px;
+				border: none;
+
+				&::after {
+					content: "";
+					display: block;
+					width: 16px;
+					height: 16px;
+					margin-left: 8px;
+					background: url('../img/icons/caret-right-icon-white.svg') no-repeat;
+				}
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	&__img {
+		position: absolute;
+		bottom: -150px;
+		right: 80px;
+		width: 50%;
+		z-index: 2;
+		transition: transform 0.6s ease-in-out;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	> img {
+		position: absolute;
+		bottom: 25px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}

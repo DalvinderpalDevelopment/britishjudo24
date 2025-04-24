@@ -1,0 +1,56 @@
+@use "../1-utilities/" as *;
+
+.stats {
+  	background-color: $blue-light;
+  	padding: 50px 0;
+
+	h3 {
+		font-size: 66px;
+		color: $blue-base;
+
+		span {
+			color: $red-base;
+		}
+	}
+
+	&__grid {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex: 1;
+		margin-left: 122px;
+		margin-top: 18px;
+		max-width: none;
+
+		&__col {
+			
+			h4 {
+				margin: 20px 0 10px 0;
+				font-size: 160px;
+				color: $blue-base;
+				transition: transform 0.5s ease-in-out;
+			}
+
+			h6 {
+				margin: 0;
+				color: $white-base;
+			}
+
+			&--divider {
+
+				span {
+					display: block;
+					width: 1px;
+					height: 200px;
+					background-color: $blue-base;
+				}
+			}
+
+			&:not(:has(&.stats__grid__col--divider)) {
+				display: flex;
+				justify-content: center;
+				width: 33%;
+			}
+		}
+	}
+}
