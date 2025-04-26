@@ -390,9 +390,7 @@ $helper = new Helper();
 			<div class="container">
 				<p>&copy; Copyright - British Judo Association</p>
 				<p>Designed & Built by 
-					<a href="#" aria-label="Visit Platform81's website" target="_blank" rel="noopener noreferrer">
-						<img src="./assets/dist/img/branding/platform81-logo.png" alt="Platform81 Logo" />
-					</a>
+					<a href="https://portfolio.dalvinderpalssoora.co.uk" aria-label="Visit Dalvinderpal Soora Portfolio website" target="_blank" rel="noopener noreferrer">Dalinderpal Soora</a>
 				</p>
 			</div>
 		</div>
