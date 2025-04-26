@@ -96,9 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
+	//Handle video lazy loading.
+	function videoLoading() {
+		const video = document.querySelector('.hero__video');
+    	video.src = video.getAttribute('data-src');
+	}
+
 	toggleSearchForm();
 
 	headerNavToggle();
 
 	statsCounter();
+
+	videoLoading();
 });

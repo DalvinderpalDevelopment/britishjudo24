@@ -103,5 +103,10 @@
 				}
 			}
 		}
+
+		@media ( max-width: 768px ) {
+			grid-template-columns: auto;
+			min-height: 1200px;
+		}
 	}
 }
