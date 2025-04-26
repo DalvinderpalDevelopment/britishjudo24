@@ -6,6 +6,11 @@
  * @author Dalvinderpal Soora
  * @since 1.0.0
  */
+
+if ( ! ob_start( 'ob_gzhandler' ) ) {
+	ob_start();
+};
+
 require_once __DIR__ . '/app/classes/class-british-judo-helper.php';
 use BritishJudo24\Helper;
 $helper = new Helper();
@@ -17,6 +22,8 @@ $helper = new Helper();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>British Judo</title>
 	<script src="<?php echo $helper->asset_url( '/js/main.js' ); ?>" defer></script>
+	<link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+	<link rel="preload" as="script" href="https://kit.fontawesome.com/590322deee.js" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/590322deee.js" crossorigin="anonymous" defer></script>
 	<link rel="stylesheet" href="<?php echo $helper->asset_url( '/css/main.css' ); ?>">
 </head>
@@ -83,7 +90,10 @@ $helper = new Helper();
 	</header>
 
 	<section class="hero">
-		<video class="hero__video" src="<?php echo $helper->asset_url( '/video/hero-reel.mp4' ); ?>" autoplay muted loop aria-label="Video showcasing British Judo to promote self-control"></video>
+		<video class="hero__video" autoplay muted loop aria-label="Video showcasing British Judo to promote self-control" poster="<?php echo $helper->asset_url( '/img/components/hero-reel-poster.webp' ); ?>" preload="none" data-src="<?php echo $helper->asset_url( '/video/hero-reel.webm' ); ?>">
+			<source data-src="<?php echo $helper->asset_url( '/video/hero-reel.webm' ); ?>" type="video/webm">
+			<source data-src="<?php echo $helper->asset_url( '/video/hero-reel.mp4' ); ?>" type="video/mp4">
+		</video>
 		<div class="container">
 			<div class="hero__content">
 				<p>Embrace</p>
@@ -163,7 +173,7 @@ $helper = new Helper();
 				</div>
 			</div>
 			<div class="benefits__img">
-			<img src="<?php echo $helper->asset_url( '/img/components/membership-athlete.png' ); ?>" alt="Image of an athlete training in judo" />
+			<img src="<?php echo $helper->asset_url( '/img/components/membership-athlete.webp' ); ?>" alt="Image of an athlete training in judo" />
 			</div>
 		</div>
 		<img src="<?php echo $helper->asset_url( '/img/components/membership-vector.svg' ); ?>" alt="Illustration of British Judo membership benefits" />
@@ -173,21 +183,21 @@ $helper = new Helper();
 		<div class="container">
 			<div class="core__grid">
 				<a class="core__grid--card" href="#" target="_blank" aria-label="Upcoming Events">
-					<img class="core__grid--card-img" src="<?php echo $helper->asset_url( '/img/components/judo-athlete-1.png' ); ?>" alt="Image of Judo Athlete 1" />
+					<img class="core__grid--card-img" src="<?php echo $helper->asset_url( '/img/components/judo-athlete-1.webp' ); ?>" alt="Image of Judo Athlete 1" />
 					<h3 class="core__grid--card-title">
 						<span>Upcoming</span>
 						<span>Events</span>
 					</h3>
 				</a>
 				<a class="core__grid--card" href="#" target="_blank" aria-label="Renew Membership">
-					<img class="core__grid--card-img" src="<?php echo $helper->asset_url( '/img/components/judo-athlete-2.png' ); ?>" alt="Image of Judo Athlete 2" />
+					<img class="core__grid--card-img" src="<?php echo $helper->asset_url( '/img/components/judo-athlete-2.webp' ); ?>" alt="Image of Judo Athlete 2" />
 					<h3 class="core__grid--card-title">
 						<span>Renew</span>
 						<span>Membership</span>
 					</h3>
 				</a>
 				<a class="core__grid--card" href="#" target="_blank" aria-label="Find a Club">
-					<img class="core__grid--card-img" src="<?php echo $helper->asset_url( '/img/components/judo-athlete-3.png' ); ?>" alt="Image of Judo Athlete 3" />
+					<img class="core__grid--card-img" src="<?php echo $helper->asset_url( '/img/components/judo-athlete-3.webp' ); ?>" alt="Image of Judo Athlete 3" />
 					<h3 class="core__grid--card-title">
 						<span>Find a</span>
 						<span>Club</span>
@@ -236,83 +246,83 @@ $helper = new Helper();
 			<h3 class="partners__title" id="partners-title">Our partners</h3>
 			<div class="partners__grid">
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 1 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-1.png' ); ?>" alt="Partner Logo 1" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-1.webp' ); ?>" alt="Partner Logo 1" />
 					<span class="sr-only">Partner Logo 1</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 2 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-2.png' ); ?>" alt="Partner Logo 2" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-2.webp' ); ?>" alt="Partner Logo 2" />
 					<span class="sr-only">Partner Logo 2</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 3 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-3.png' ); ?>" alt="Partner Logo 3" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-3.webp' ); ?>" alt="Partner Logo 3" />
 					<span class="sr-only">Partner Logo 3</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 4 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-4.png' ); ?>" alt="Partner Logo 4" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-4.webp' ); ?>" alt="Partner Logo 4" />
 					<span class="sr-only">Partner Logo 4</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 5 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-5.png' ); ?>" alt="Partner Logo 5" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-5.webp' ); ?>" alt="Partner Logo 5" />
 					<span class="sr-only">Partner Logo 5</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 6 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-6.png' ); ?>" alt="Partner Logo 6" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-6.webp' ); ?>" alt="Partner Logo 6" />
 					<span class="sr-only">Partner Logo 6</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 7 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-7.png' ); ?>" alt="Partner Logo 7" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-7.webp' ); ?>" alt="Partner Logo 7" />
 					<span class="sr-only">Partner Logo 7</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 8 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-8.png' ); ?>" alt="Partner Logo 8" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-8.webp' ); ?>" alt="Partner Logo 8" />
 					<span class="sr-only">Partner Logo 8</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 9 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-9.png' ); ?>" alt="Partner Logo 9" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-9.webp' ); ?>" alt="Partner Logo 9" />
 					<span class="sr-only">Partner Logo 9</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 10 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-10.png' ); ?>" alt="Partner Logo 10" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-10.webp' ); ?>" alt="Partner Logo 10" />
 					<span class="sr-only">Partner Logo 10</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 11 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-11.png' ); ?>" alt="Partner Logo 11" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-11.webp' ); ?>" alt="Partner Logo 11" />
 					<span class="sr-only">Partner Logo 11</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 12 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-12.png' ); ?>" alt="Partner Logo 12" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-12.webp' ); ?>" alt="Partner Logo 12" />
 					<span class="sr-only">Partner Logo 12</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 13 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-13.png' ); ?>" alt="Partner Logo 13" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-13.webp' ); ?>" alt="Partner Logo 13" />
 					<span class="sr-only">Partner Logo 13</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 14 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-14.png' ); ?>" alt="Partner Logo 14" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-14.webp' ); ?>" alt="Partner Logo 14" />
 					<span class="sr-only">Partner Logo 14</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 15 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-15.png' ); ?>" alt="Partner Logo 15" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-15.webp' ); ?>" alt="Partner Logo 15" />
 					<span class="sr-only">Partner Logo 15</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 16 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-16.png' ); ?>" alt="Partner Logo 16" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-16.webp' ); ?>" alt="Partner Logo 16" />
 					<span class="sr-only">Partner Logo 16</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 17 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-17.png' ); ?>" alt="Partner Logo 17" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-17.webp' ); ?>" alt="Partner Logo 17" />
 					<span class="sr-only">Partner Logo 17</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 18 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-18.png' ); ?>" alt="Partner Logo 18" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-18.webp' ); ?>" alt="Partner Logo 18" />
 					<span class="sr-only">Partner Logo 18</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 19 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-19.png' ); ?>" alt="Partner Logo 19" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-19.webp' ); ?>" alt="Partner Logo 19" />
 					<span class="sr-only">Partner Logo 19</span>
 				</a>
 				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 20 website">
-					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-20.png' ); ?>" alt="Partner Logo 20" />
+					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-20.webp' ); ?>" alt="Partner Logo 20" />
 					<span class="sr-only">Partner Logo 20</span>
 				</a>
 			</div>
