@@ -88,44 +88,50 @@
 
 		&--logo {
 			width: 160px;
+			min-width: 160px;
 			height: 55px;
 			margin-right: auto;
 			background: url('../img/branding/british-judo-logo-white.svg');
-			}
+			background-repeat: no-repeat;
+		}
 
-			&--nav {
+		&--nav {
+			height: 100%;
+			margin-right: 30px;
+
+			ul {
+				display: flex;
+				align-items: center;
 				height: 100%;
-				margin-right: 30px;
+				list-style: none;
+				margin: 0 -17px;
 
-				ul {
+				li {
 					display: flex;
 					align-items: center;
 					height: 100%;
-					list-style: none;
-					margin: 0 -17px;
 
-					li {
-						display: flex;
-						align-items: center;
-						height: 100%;
+					a {
+						font-size: 16px;
+						text-transform: uppercase;
+						text-decoration: none;
+						padding: 0 18px;
+					}
 
-						a {
-							font-size: 16px;
-							text-transform: uppercase;
-							text-decoration: none;
-							padding: 0 18px;
-						}
+					&:hover {
 
-						&:hover {
+						> .header__main--nav-dropdown {
+							visibility: visible;
+							opacity: 1;
+							transition: all 0.6s ease;
 
-							> .header__main--nav-dropdown {
-								visibility: visible;
-								opacity: 1;
-								transition: all 0.6s ease;
+							@media ( max-width: 768px ) {
+								overflow: scroll;
 							}
 						}
 					}
 				}
+			}
 
 			&-dropdown {
 				position: absolute;
@@ -286,6 +292,69 @@
 					a {
 						color: $blue-navy;
 					}
+				}
+			}
+		}
+	}
+
+	@media ( max-width: 1000px ) {
+
+		&__eyebrow {
+
+			&--nav {
+				justify-content: flex-start;
+			}
+		}
+
+		&__main {
+			overflow: scroll;
+
+			&--nav {
+
+				ul {
+
+					li {
+						min-width: max-content;
+					}
+				}
+			}
+
+			&--search {
+
+				&-toggle {
+					min-width: 50px;
+				}
+
+				&.active {
+					min-width: 500px;
+
+					form {
+						width: 100%;
+					}
+				}
+			}
+
+			&--become-member {
+				min-width: 150px;
+			}
+		}
+	}
+
+	@media ( max-width: 768px ) {
+
+		&__eyebrow {
+			height: auto;
+
+			.container {
+				flex-wrap: wrap;
+    			justify-content: center;
+			}
+
+			&--nav {
+				justify-content: center;
+
+				ul {
+					padding-left: 0;
 				}
 			}
 		}

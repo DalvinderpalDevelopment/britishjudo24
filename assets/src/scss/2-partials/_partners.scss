@@ -14,12 +14,12 @@
 	}
 
 	&__grid {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		gap: 25px;
+		display: flex;
+		flex-wrap: wrap;
 		width: 100%;
 
 		&--link {
+			width: 20%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -30,6 +30,26 @@
 
 			&:hover {
 				transform: scale(1.2);
+			}
+		}
+	}
+
+	@media ( max-width: 1200px ) {
+
+		&__grid {
+
+			&--link {
+				width: 33%;
+			}
+		}
+	}
+
+	@media ( max-width: 768px ) {
+		
+		&__grid {
+
+			&--link {
+				width: 50%;
 			}
 		}
 	}

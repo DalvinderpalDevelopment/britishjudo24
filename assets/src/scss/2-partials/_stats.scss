@@ -7,6 +7,7 @@
 	h3 {
 		font-size: 66px;
 		color: $blue-base;
+		width: 25%;
 
 		span {
 			color: $red-base;
@@ -17,10 +18,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		flex: 1;
-		margin-left: 122px;
 		margin-top: 18px;
-		max-width: none;
+		width: 100%;
 
 		&__col {
 			
@@ -50,6 +49,32 @@
 				display: flex;
 				justify-content: center;
 				width: 33%;
+			}
+		}
+	}
+
+	@media ( max-width: 1000px ) {
+
+		.container {
+			flex-wrap: wrap;
+		}
+
+		h3 {
+			width: 100%;
+			text-align: center;
+		}
+
+		&__grid {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-left: 0;
+
+			&__col {
+				width: 100% !important;
+
+				&--divider {
+					display: none;
+				}
 			}
 		}
 	}

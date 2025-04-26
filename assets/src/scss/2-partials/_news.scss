@@ -3,6 +3,7 @@
 .news {
   	background-color: $blue-navy;
   	position: relative;
+	overflow: hidden;
 
 	&__grid {
 		display: grid;
@@ -82,6 +83,11 @@
 					text-decoration: underline;
 				}
 			}
+		}
+
+		@media ( max-width: 768px ) {
+			grid-template-columns: auto;
+    		width: 100%;
 		}
 	}
 

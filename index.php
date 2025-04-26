@@ -37,13 +37,13 @@ $helper = new Helper();
 				</p>
 				<a class="header__eyebrow--stream-live" href="#" target="_blank" aria-label="Live streams section" role="link">Live streams <span></span></a>
 				<nav class="header__eyebrow--nav" role="navigation" aria-label="Main navigation">
-					<ul>
-						<li><a href="#" target="_blank" aria-label="Learn about Safeguarding" role="link">Safeguarding</a></li>
-						<li><a href="#" target="_blank" aria-label="Read the latest News" role="link">News</a></li>
-						<li><a href="#" target="_blank" aria-label="Contact British Judo" role="link">Contact</a></li>
-						<li><a href="#" target="_blank" aria-label="Visit the Shop" role="link">Shop</a></li>
-					</ul>  
-				</nav>
+						<ul>
+							<li><a href="#" target="_blank" aria-label="Learn about Safeguarding" role="link">Safeguarding</a></li>
+							<li><a href="#" target="_blank" aria-label="Read the latest News" role="link">News</a></li>
+							<li><a href="#" target="_blank" aria-label="Contact British Judo" role="link">Contact</a></li>
+							<li><a href="#" target="_blank" aria-label="Visit the Shop" role="link">Shop</a></li>
+						</ul>  
+					</nav>
 			</div>
 		</div>
 		<div class="header__main">
