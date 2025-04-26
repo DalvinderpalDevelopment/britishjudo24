@@ -245,83 +245,83 @@ $helper = new Helper();
 		<div class="container">
 			<h3 class="partners__title" id="partners-title">Our partners</h3>
 			<div class="partners__grid">
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 1 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 1 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-1.webp' ); ?>" alt="Partner Logo 1" />
 					<span class="sr-only">Partner Logo 1</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 2 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 2 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-2.webp' ); ?>" alt="Partner Logo 2" />
 					<span class="sr-only">Partner Logo 2</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 3 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 3 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-3.webp' ); ?>" alt="Partner Logo 3" />
 					<span class="sr-only">Partner Logo 3</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 4 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 4 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-4.webp' ); ?>" alt="Partner Logo 4" />
 					<span class="sr-only">Partner Logo 4</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 5 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 5 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-5.webp' ); ?>" alt="Partner Logo 5" />
 					<span class="sr-only">Partner Logo 5</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 6 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 6 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-6.webp' ); ?>" alt="Partner Logo 6" />
 					<span class="sr-only">Partner Logo 6</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 7 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 7 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-7.webp' ); ?>" alt="Partner Logo 7" />
 					<span class="sr-only">Partner Logo 7</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 8 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 8 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-8.webp' ); ?>" alt="Partner Logo 8" />
 					<span class="sr-only">Partner Logo 8</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 9 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 9 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-9.webp' ); ?>" alt="Partner Logo 9" />
 					<span class="sr-only">Partner Logo 9</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 10 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 10 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-10.webp' ); ?>" alt="Partner Logo 10" />
 					<span class="sr-only">Partner Logo 10</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 11 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 11 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-11.webp' ); ?>" alt="Partner Logo 11" />
 					<span class="sr-only">Partner Logo 11</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 12 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 12 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-12.webp' ); ?>" alt="Partner Logo 12" />
 					<span class="sr-only">Partner Logo 12</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 13 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 13 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-13.webp' ); ?>" alt="Partner Logo 13" />
 					<span class="sr-only">Partner Logo 13</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 14 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 14 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-14.webp' ); ?>" alt="Partner Logo 14" />
 					<span class="sr-only">Partner Logo 14</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 15 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 15 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-15.webp' ); ?>" alt="Partner Logo 15" />
 					<span class="sr-only">Partner Logo 15</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 16 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 16 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-16.webp' ); ?>" alt="Partner Logo 16" />
 					<span class="sr-only">Partner Logo 16</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 17 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 17 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-17.webp' ); ?>" alt="Partner Logo 17" />
 					<span class="sr-only">Partner Logo 17</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 18 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 18 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-18.webp' ); ?>" alt="Partner Logo 18" />
 					<span class="sr-only">Partner Logo 18</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 19 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 19 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-19.webp' ); ?>" alt="Partner Logo 19" />
 					<span class="sr-only">Partner Logo 19</span>
 				</a>
-				<a class="partners__grid--link" href="" target="_blank" rel="noopener noreferrer" aria-label="Visit partner 20 website">
+				<a class="partners__grid--link" href="" target="_blank" aria-label="Visit partner 20 website">
 					<img class="partners__grid--img" src="<?php echo $helper->asset_url( '/img/partners/partner-logo-20.webp' ); ?>" alt="Partner Logo 20" />
 					<span class="sr-only">Partner Logo 20</span>
 				</a>
@@ -340,32 +340,32 @@ $helper = new Helper();
 					<div class="footer__main__col footer__main__col--links">
 						<h5>Useful links</h5>
 						<ul>
-							<li><a href="#" aria-label="Go to News page" target="_blank" rel="noopener noreferrer">News</a></li>
-							<li><a href="#" aria-label="Go to Events page" target="_blank" rel="noopener noreferrer">Events</a></li>
-							<li><a href="#" aria-label="Go to Membership page" target="_blank" rel="noopener noreferrer">Membership</a></li>
-							<li><a href="#" aria-label="Go to Get started page" target="_blank" rel="noopener noreferrer">Get started</a></li>
-							<li><a href="#" aria-label="Go to Partners page" target="_blank" rel="noopener noreferrer">Partners</a></li>
-							<li><a href="#" aria-label="Go to Terms & conditions page" target="_blank" rel="noopener noreferrer">Terms & conditions</a></li>
-							<li><a href="#" aria-label="Go to Privacy policy page" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
-							<li><a href="#" aria-label="Go to Safe sport page" target="_blank" rel="noopener noreferrer">Safe sport</a></li>
+							<li><a href="#" aria-label="Go to News page" target="_blank">News</a></li>
+							<li><a href="#" aria-label="Go to Events page" target="_blank">Events</a></li>
+							<li><a href="#" aria-label="Go to Membership page" target="_blank">Membership</a></li>
+							<li><a href="#" aria-label="Go to Get started page" target="_blank">Get started</a></li>
+							<li><a href="#" aria-label="Go to Partners page" target="_blank">Partners</a></li>
+							<li><a href="#" aria-label="Go to Terms & conditions page" target="_blank">Terms & conditions</a></li>
+							<li><a href="#" aria-label="Go to Privacy policy page" target="_blank">Privacy policy</a></li>
+							<li><a href="#" aria-label="Go to Safe sport page" target="_blank">Safe sport</a></li>
 						</ul>
 					</div>
 					<div class="footer__main__col footer__main__col--social">
 						<h5>Connect with us</h5>
 						<div class="social-links" role="navigation" aria-label="Social Media Links">
-							<a href="#" aria-label="Follow British Judo on X" target="_blank" rel="noopener noreferrer">
+							<a href="#" aria-label="Follow British Judo on X" target="_blank">
 								<i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
 								<span class="sr-only">Follow British Judo on X</span>
 							</a>
-							<a href="#" aria-label="Follow British Judo on Facebook" target="_blank" rel="noopener noreferrer">
+							<a href="#" aria-label="Follow British Judo on Facebook" target="_blank">
 								<i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
 								<span class="sr-only">Follow British Judo on Facebook</span>
 							</a>
-							<a href="#" aria-label="Follow British Judo on Instagram" target="_blank" rel="noopener noreferrer">
+							<a href="#" aria-label="Follow British Judo on Instagram" target="_blank">
 								<i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
 								<span class="sr-only">Follow British Judo on Instagram</span>
 							</a>
-							<a href="#" aria-label="Follow British Judo on YouTube" target="_blank" rel="noopener noreferrer">
+							<a href="#" aria-label="Follow British Judo on YouTube" target="_blank">
 								<i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
 								<span class="sr-only">Follow British Judo on YouTube</span>
 							</a>
@@ -400,7 +400,7 @@ $helper = new Helper();
 			<div class="container">
 				<p>&copy; Copyright - British Judo Association</p>
 				<p>Designed & Built by 
-					<a href="https://portfolio.dalvinderpalssoora.co.uk" aria-label="Visit Dalvinderpal Soora Portfolio website" target="_blank" rel="noopener noreferrer">Dalinderpal Soora</a>
+					<a href="https://portfolio.dalvinderpalssoora.co.uk" aria-label="Visit Dalvinderpal Soora Portfolio website" target="_blank" rel="noopener noreferrer">Dalvinderpal Soora</a>
 				</p>
 			</div>
 		</div>
