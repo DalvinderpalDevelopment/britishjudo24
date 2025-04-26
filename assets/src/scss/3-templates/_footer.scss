@@ -82,9 +82,10 @@ footer {
 				display: flex;
 				align-items: center;
 				justify-content: space-around;
-				gap: 0 7vw;
+				gap: 0 40px;
 				flex-shrink: 0;
-				animation: marquee 40s linear infinite;
+				min-width: 100%;
+    			animation: marquee 40s linear infinite;
 
 				span {
 					font-family: 'BeniBold', sans-serif;

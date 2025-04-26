@@ -1,0 +1,5 @@
+#Git files/folders to ignore in commit.
+
+#Add node_modules to file/folders to ignore.
+
+node_modules
