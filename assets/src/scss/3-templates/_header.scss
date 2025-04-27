@@ -82,7 +82,8 @@
 	&__main {
 		position: relative;
 
-		.container {
+		> .container {
+			overflow: auto;
 			height: 100px;
 		}
 
@@ -126,7 +127,7 @@
 							transition: all 0.6s ease;
 
 							@media ( max-width: 768px ) {
-								overflow: scroll;
+								overflow: hidden;
 							}
 						}
 					}
@@ -307,7 +308,6 @@
 		}
 
 		&__main {
-			overflow: scroll;
 
 			&--nav {
 

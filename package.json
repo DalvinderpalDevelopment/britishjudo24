@@ -4,11 +4,14 @@
   "description": "A static landing web page for British Judo Team.",
   "main": "",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "preview": "npx vite preview"
   },
   "keywords": [],
   "author": "Dalvinderpal Soora",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.3.3"
+  }
 }

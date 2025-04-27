@@ -20,12 +20,29 @@ $helper = new Helper();
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="title" content="British Judo | Discover the Spirit of Judo in the UK">
+	<meta name="description" content="Join British Judo and embrace discipline, self-control, and community. Explore clubs, events, and membership benefits today.">
 	<title>British Judo</title>
 	<script src="<?php echo $helper->asset_url( '/js/main.js' ); ?>" defer></script>
 	<link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
 	<link rel="preload" as="script" href="https://kit.fontawesome.com/590322deee.js" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/590322deee.js" crossorigin="anonymous" defer></script>
 	<link rel="stylesheet" href="<?php echo $helper->asset_url( '/css/main.css' ); ?>">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://britishjudo24.dalvinderpalssoora.co.uk/">
+	<meta property="og:title" content="British Judo | Discover the Spirit of Judo in the UK">
+	<meta property="og:description" content="Join British Judo and embrace discipline, self-control, and community. Explore clubs, events, and membership benefits today.">
+	<meta property="og:image" content="<?php echo $helper->asset_url( '/img/branding/british-judo-cover.png' ); ?>">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="https://britishjudo24.dalvinderpalssoora.co.uk/">
+	<meta name="twitter:title" content="British Judo | Discover the Spirit of Judo in the UK">
+	<meta name="twitter:description" content="Join British Judo and embrace discipline, self-control, and community. Explore clubs, events, and membership benefits today.">
+	<meta name="twitter:image" content="<?php echo $helper->asset_url( '/img/branding/british-judo-cover.png' ); ?>">
+
 </head>
 <body>
 	<header class="header">

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Header nav toggle fucntion to toggle list items to show dropdown.
+	// Header nav toggle function to toggle list items to show dropdown.
 	function headerNavToggle() {
 		const mainNavItems = document.querySelectorAll('.header__main--nav > ul > li');
 		const mainNavDropdown = document.querySelector('.header__main--nav-dropdown');
